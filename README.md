@@ -30,5 +30,51 @@ while n<=100:
   n+=1
 ```
 ### 2. Imprimir un listado con los números impares desde 1 hasta 999 y seguidamente otro listado con los números pares desde 2 hasta 1000
+#### Diagrama de flujo
+```mermaid
+---
+config:
+  layout: fixed
+---
+flowchart TD
+    n1["Inicio"] --> n2["defirnir n = 1"]
+    n2 --> n3["Imprimir titulo: Impares"]
+    n3 --> n4["n&lt;1000 ?"]
+    n4 -- F --> n6["definir n = 1"]
+    n4 -- V --> n7["n es impar?"]
+    n7 -- F --> n8["Sumar 1 a n"]
+    n7 -- V --> n9["Imprimir n"]
+    n9 --> n8
+    n8 --> n4
+    n10["n es par?"] -- F --> n11["Sumar 1 a n"]
+    n10 -- V --> n12["Imprimir n"]
+    n12 --> n11
+    n6 --> n13["Imprimir titulo: Pares"]
+    n13 --> n10
+    n10 --> n14["End"]
+    n1@{ shape: rounded}
+    n4@{ shape: diam}
+    n7@{ shape: diam}
+    n10@{ shape: diam}
+    n11@{ shape: rect}
+    n12@{ shape: rect}
+    n13@{ shape: rect}
+    n14@{ shape: rounded}
+```
+#### Programa
+```python
+n=1
+print("Impares\n")
+while n<1000:
+  if n%2 != 0:
+    print(n)
+  n+=1
+n=1
+print("\nPares\n")
+while n<=1000:
+  if n%2 == 0:
+    print(n)
+  n+=1
+```
 ### 3. Imprimir los números pares en forma descendente hasta 2 que son menores o iguales a un número natural n ≥ 2 dado
 ###
