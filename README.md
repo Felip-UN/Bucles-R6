@@ -49,9 +49,11 @@ flowchart TD
     n10["n es par?"] -- V --> n12["Imprimir n"]
     n12 --> n11["Sumar 1 a n"]
     n6 --> n13["Imprimir titulo: Pares"]
-    n13 --> n10
-    n10 -- F --> n14["End"]
-    n11 --> n10
+    n10 -- F --> n11
+    n13 --> n15["n&lt;=1000 ?"]
+    n15 --> n10
+    n11 --> n15
+    n14["End"] --> n15
     n1@{ shape: rounded}
     n4@{ shape: diam}
     n7@{ shape: diam}
@@ -59,6 +61,7 @@ flowchart TD
     n12@{ shape: rect}
     n11@{ shape: rect}
     n13@{ shape: rect}
+    n15@{ shape: diam}
     n14@{ shape: rounded}
 ```
 #### Programa
