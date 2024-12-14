@@ -9,12 +9,12 @@ config:
   layout: fixed
 ---
 flowchart TD
-    n4["n&lt;=100 ?"] -- V --> n5["imprime n y n^2"]
-    n2["Definir como valor inicial de n =1"] --> n4
-    n5 --> n6["Sumar +1 a n"]
+    n2["Definir como valor inicial de n =1"] --> n4["n&lt;=100 ?"]
+    n5["imprime n y n^2"] --> n6["Sumar +1 a n"]
     n1["Inicio"] --> n8["Imprimir un titulo de orden"]
     n8 --> n2
-    n4 -- F --> n7["End"]
+    n7["End"] --> n4
+    n4 --> n5
     n6 --> n4
     n4@{ shape: diam}
     n1@{ shape: rounded}
