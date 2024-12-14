@@ -80,4 +80,11 @@ while n<=1000:
   n+=1
 ```
 ### 3. Imprimir los números pares en forma descendente hasta 2 que son menores o iguales a un número natural n ≥ 2 dado
-###
+### Programa:
+```python
+n=int(input("ingresa un numero: "))
+while n>=2:
+  if n%2 == 0:
+    print(n)
+  n-=1
+```
