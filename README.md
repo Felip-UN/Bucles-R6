@@ -13,9 +13,9 @@ flowchart TD
     n5["imprime n y n^2"] --> n6["Sumar +1 a n"]
     n1["Inicio"] --> n8["Imprimir un titulo de orden"]
     n8 --> n2
-    n7["End"] -- F --> n4
     n4 -- V --> n5
     n6 --> n4
+    n4 --> n7["End"]
     n4@{ shape: diam}
     n1@{ shape: rounded}
     n8@{ shape: rect}
