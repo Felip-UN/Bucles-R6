@@ -51,9 +51,9 @@ flowchart TD
     n6 --> n13["Imprimir titulo: Pares"]
     n10 -- F --> n11
     n13 --> n15["n&lt;=1000 ?"]
-    n15 --> n10
+    n15 -- V --> n10
+    n15 -- F --> n14["End"]
     n11 --> n15
-    n15 --> n14["End"]
     n1@{ shape: rounded}
     n4@{ shape: diam}
     n7@{ shape: diam}
