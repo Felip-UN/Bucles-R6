@@ -80,7 +80,23 @@ while n<=1000:
   n+=1
 ```
 ### 3. Imprimir los números pares en forma descendente hasta 2 que son menores o iguales a un número natural n ≥ 2 dado
-### Programa:
+#### Diagrama de flujo
+```mermaid
+---
+config:
+  layout: fixed
+---
+flowchart TD
+    n1["Inicio"] --> n2["Asiganr un valor a n mediante el teclado"]
+    n3["n &gt;= 2 ?"] -- V --> n4["imprimir n"]
+    n4 --> n5["Restar 1 a n"]
+    n5 --> n3
+    n3 -- F --> n6["end"]
+    n2 --> n3
+    n1@{ shape: rounded}
+    n3@{ shape: diam}
+```
+#### Programa:
 ```python
 n=int(input("ingresa un numero: "))
 while n>=2:
