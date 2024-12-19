@@ -31,7 +31,7 @@ while n<=100:
   print(n,n**2) #imprime numero y numero al cuadrado
   n+=1
 ```
-Salida generada: muy extensa (ejecutar en interprete si desea ver resultados)
+**Salida generada:** **muy extensa (ejecutar en interprete si desea ver resultados)*
 ### 2. Imprimir un listado con los números impares desde 1 hasta 999 y seguidamente otro listado con los números pares desde 2 hasta 1000
 #### Diagrama de flujo
 ```mermaid
@@ -82,7 +82,7 @@ while n<=1000: el bucle se rompe hasta cuando n tiene valor 1001
     print(n)
   n+=1
 ```
-Salida generada: muy extensa (ejecutar en interprete si desea ver resultados)
+**Salida generada:** **muy extensa (ejecutar en interprete si desea ver resultados)*
 
 ### 3. Imprimir los números pares en forma descendente hasta 2 que son menores o iguales a un número natural n ≥ 2 dado
 #### Diagrama de flujo
@@ -119,7 +119,11 @@ else:
   print("Tu numero no entra en los limites establecidos")
 ```
 Ingresa 6 salida generada: 6 4 2
+
+
 Ingresa 5 salida generada: 4 2
+
+
 Ingresa -2 salida generada: Tu numero no entra en los limites establecidos
 ### 4. Imprimir el factorial de un número natural n dado
 #### Programa
@@ -137,7 +141,11 @@ if __name__=="__main__":
   print(str(num)+"! es:", acumulado) #esto es unicamente para una salida "elegante" y visualmente entendible
 ```
 Ingresa 4 salida generada: 4! es: 24
+
+
 Ingresa 5 salida generada: 5! es: 120
+
+
 Ingresa 8 salida generada: 8! es: 40320
 #### Pseudocodigo
 Con este reto me confundi un poco asi que plantee en un bloc de notas de como actuaria el programa y la salida que daria (en este caso fue con el 4 pero el programa de arriba sirve con cualquier numero)
@@ -172,6 +180,8 @@ else:
   print("Tu numero no entra en los limites establecidos") #no se cumplio la condicion
 ```
 Ingresa 12 salida generada: 1 2 3 4 6 12
+
+
 Ingresa 1 salida generada: Tu numero no entra en los limites establecidos
 ### 6. Implementar el algoritmo que muestre los números primos del 1 al 100.
 #### Funcion definida y su explicacion
@@ -187,7 +197,7 @@ def sera_primo(numero):
     v2 += 1
   return True #Si ninguna condicion resulta ser cierta esta sera la salida
 ```
-Mausquerramienta: Pense en utilizar todos los valores menores que el numero ingresado, pero al solo comprobar si su raiz cuadrada es divisible por algun numero menor o igual a esta significara que ese numero por el que se dividio tambien es divisor del numero original lo que significara que no es un numero primo
+**Mausquerramienta:** Pense en utilizar todos los valores menores que el numero ingresado, pero al solo comprobar si su raiz cuadrada es divisible por algun numero menor o igual a esta significara que ese numero por el que se dividio tambien es divisor del numero original lo que significara que no es un numero primo
 #### Programa
 ```python
 def sera_primo(numero):
