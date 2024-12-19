@@ -1,5 +1,7 @@
 # Bucles-R6
 Retos con bucles tipo while
+
+Se invita al usario a probar los codigos en un interprete como colab si desea echar un vistaso las salidas de los codigos o desea probar distintos valores, se avisa que algunas salidas son bien largas
 ## Retos propuestos
 ### 1. Imprimir un listado con los números del 1 al 100 cada uno con su respectivo cuadrado
 #### Diagrama de flujo
@@ -120,20 +122,50 @@ if __name__=="__main__":
       break
   print(str(num)+"! es:", acumulado)
 ```
+Ingresa 5 salida deseada 120
 #### Pseudocodigo
-Con este me trabe un poco asi que plantee como deberia actuaria el programa (en este caso fue con el 4 pero el programa de arriba sirve con cualquier numero)
+Con este me trabe un poco asi que plantee en un bloc de notas como deberia actuaria el programa (en este caso fue con el 4 pero el programa de arriba sirve con cualquier numero)
 ```python
 a*b=acumulado
 1*1=1
 b==4? no
-se guarda 1
+se guarda acumulado=1
 1*2=2
 b==4? no
-se guarda 2
+se guarda acumulado=2
 2*3=6 
 b==4? no
-se guarda 6
+se guarda acumulado=6
 6* 4=24
 b==4? si
-Fatorial igual a acumulado 24
+se guarda acumulado=24 y se rompe el bucle
+Fatorial = acumulado 24
 ```
+### 5. Implementar un programa que ingrese un número de 2 a 50 y muestre sus divisores.
+#### Programa
+```python
+numero_e=int(input("Tngresa un numero de entre 2 y 50 "))
+posible_div=1
+if numero_e>2 and numero_e<50:
+  print("los divisores de",numero_e,"son:")
+  while posible_div <= numero_e:
+    if numero_e % posible_div==0:
+      print(posible_div)
+    posible_div+=1
+else:
+  print("Tu numero no entra en los limites establecidos")
+```
+Ingresa 12 salida deseada:
+
+
+1
+
+2
+
+3
+
+4
+
+6
+
+12
