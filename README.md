@@ -96,11 +96,44 @@ flowchart TD
     n1@{ shape: rounded}
     n3@{ shape: diam}
 ```
-#### Programa:
+#### Programa
 ```python
 n=int(input("ingresa un numero: "))
 while n>=2:
   if n%2 == 0:
     print(n)
   n-=1
+```
+### 4. Imprimir el factorial de un número natural n dado
+#### Programa
+```python
+if __name__=="__main__":
+  num=int(input("Ingresa un numero "))
+  v2=1
+  acumulado=1
+
+  while True:
+    if num >= v2:
+      acumulado=v2*acumulado
+      v2+=1
+    else:
+      break
+  print(str(num)+"! es:", acumulado)
+```
+#### Pseudocodigo
+Con este me trabe un poco asi que plantee como deberia actuaria el programa (en este caso fue con el 4 pero el programa de arriba sirve con cualquier numero)
+```python
+a*b=acumulado
+1*1=1
+b==4? no
+se guarda 1
+1*2=2
+b==4? no
+se guarda 2
+2*3=6 
+b==4? no
+se guarda 6
+6* 4=24
+b==4? si
+Fatorial igual a acumulado 24
 ```
